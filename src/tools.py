@@ -76,6 +76,7 @@ def _fetch_fda_live(since_days: int = 30, limit: int = 5) -> list[dict]:
             return []
     if payload is None:
         return []
+    LAST_LIVE_ERROR = ""  # live fetch succeeded; do not leak stale widening notes
     out: list[dict] = []
     for r in payload.get("results", []):
         cls = r.get("classification") or ""
