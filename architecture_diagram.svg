@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#475569"/>
+    </marker>
+  </defs>
+
+  <!-- background -->
+  <rect x="0" y="0" width="960" height="560" fill="#f8fafc"/>
+
+  <!-- title -->
+  <text x="480" y="26" text-anchor="middle" font-size="18" font-weight="700" fill="#0B1F3A">MedReg Agent — Architecture (Strands Agents SDK)</text>
+
+  <!-- User -->
+  <rect x="400" y="44" width="160" height="46" rx="8" fill="#ffffff" stroke="#0B1F3A" stroke-width="2"/>
+  <text x="480" y="72" text-anchor="middle" font-size="14" fill="#0B1F3A">Regulatory Professional</text>
+
+  <!-- Orchestrator -->
+  <rect x="350" y="124" width="260" height="74" rx="10" fill="#0B1F3A"/>
+  <text x="480" y="152" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff">Strands Agent (Orchestrator)</text>
+  <text x="480" y="174" text-anchor="middle" font-size="12" fill="#9fece4">model: Bedrock &#8596; Ollama (qwen3.5)</text>
+
+  <!-- arrow user -> agent -->
+  <line x1="480" y1="90" x2="480" y2="124" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Tools group -->
+  <text x="60" y="222" font-size="13" font-weight="700" fill="#14B8A6">TOOLS (deterministic, offline)</text>
+  <rect x="50" y="234" width="240" height="52" rx="8" fill="#ffffff" stroke="#14B8A6" stroke-width="2"/>
+  <text x="170" y="264" text-anchor="middle" font-size="13" fill="#0B1F3A">fetch_regulatory_updates</text>
+
+  <rect x="50" y="300" width="240" height="52" rx="8" fill="#ffffff" stroke="#14B8A6" stroke-width="2"/>
+  <text x="170" y="330" text-anchor="middle" font-size="13" fill="#0B1F3A">classify_impact</text>
+
+  <rect x="50" y="366" width="240" height="52" rx="8" fill="#ffffff" stroke="#14B8A6" stroke-width="2"/>
+  <text x="170" y="396" text-anchor="middle" font-size="13" fill="#0B1F3A">draft_followup_memo</text>
+
+  <rect x="50" y="432" width="240" height="48" rx="8" fill="#eef6f5" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <text x="170" y="461" text-anchor="middle" font-size="12" fill="#475569">check_submission_readiness</text>
+  <text x="170" y="475" text-anchor="middle" font-size="11" fill="#94a3b8">/ clinic_inventory_alert (variants)</text>
+
+  <!-- arrows agent -> tools -->
+  <line x1="350" y1="150" x2="290" y2="260" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="350" y1="160" x2="290" y2="326" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="350" y1="170" x2="290" y2="392" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Data sources -->
+  <rect x="690" y="210" width="230" height="120" rx="10" fill="#ffffff" stroke="#0B1F3A" stroke-width="2"/>
+  <text x="805" y="236" text-anchor="middle" font-size="13" font-weight="700" fill="#0B1F3A">Regulatory Sources</text>
+  <text x="805" y="262" text-anchor="middle" font-size="12" fill="#334155">NMPA &#183; FDA &#183; EU MDR &#183; PMDA</text>
+  <text x="805" y="284" text-anchor="middle" font-size="12" fill="#334155">+ bundled demo corpus</text>
+  <text x="805" y="312" text-anchor="middle" font-size="11" fill="#94a3b8">(live fetch optional)</text>
+
+  <!-- Outputs -->
+  <rect x="690" y="350" width="230" height="150" rx="10" fill="#ffffff" stroke="#14B8A6" stroke-width="2"/>
+  <text x="805" y="376" text-anchor="middle" font-size="13" font-weight="700" fill="#0B1F3A">Outputs</text>
+  <text x="805" y="402" text-anchor="middle" font-size="12" fill="#334155">&#8226; Follow-up memo</text>
+  <text x="805" y="424" text-anchor="middle" font-size="12" fill="#334155">&#8226; Readiness report</text>
+  <text x="805" y="446" text-anchor="middle" font-size="12" fill="#334155">&#8226; Inventory alerts</text>
+  <text x="805" y="468" text-anchor="middle" font-size="12" fill="#334155">&#8226; Calendar / dashboard</text>
+
+  <!-- arrows agent -> sources / outputs -->
+  <line x1="610" y1="150" x2="690" y2="262" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="610" y1="170" x2="690" y2="420" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- footer -->
+  <text x="480" y="540" text-anchor="middle" font-size="11" fill="#94a3b8">One configurable Strands agent, three personas &#8594; Professional + Good Neighbor tracks</text>
+</svg>

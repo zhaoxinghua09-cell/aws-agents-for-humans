@@ -1,0 +1,42 @@
+{
+  "updated_at": "2026-09-08",
+  "sources": ["NMPA", "FDA", "EU MDR", "PMDA"],
+  "updates": [
+    {
+      "id": "NMPA-2026-0881",
+      "region": "China (NMPA)",
+      "date": "2026-09-05",
+      "title": "NMPA releases draft revision of medical device cleanliness validation guideline",
+      "summary": "Draft revision adds stricter endotoxin and particulate matter thresholds for implanted orthopedic devices; public comment window 60 days.",
+      "tags": ["validation", "orthopedic", "endotoxin", "GMP"],
+      "url": "https://www.nmpa.gov.cn/xxgk/ggtg/"
+    },
+    {
+      "id": "FDA-2026-3340",
+      "region": "USA (FDA)",
+      "date": "2026-09-03",
+      "title": "FDA CDRH updates 510(k) submission template for software in medical devices",
+      "summary": "New template clarifies cybersecurity documentation and predicate selection for SaMD-adjacent hardware; effective for submissions filed after 2026-11-01.",
+      "tags": ["510k", "cybersecurity", "SaMD", "template"],
+      "url": "https://www.fda.gov/medical-devices"
+    },
+    {
+      "id": "MDR-2026-119",
+      "region": "EU (MDR)",
+      "date": "2026-08-29",
+      "title": "EU MDCG publishes guidance on UDI issuance for reusable instruments",
+      "summary": "Clarifies UDI-DI requirements and reprocessing documentation for reusable surgical instruments; affects legacy SKUs due for recertification.",
+      "tags": ["UDI", "reusable", "MDCG", "labeling"],
+      "url": "https://health.ec.europa.eu/medical-devices"
+    },
+    {
+      "id": "PMDA-2026-077",
+      "region": "Japan (PMDA)",
+      "date": "2026-08-26",
+      "title": "PMDA streamlines foreign manufacturer accreditation renewal",
+      "summary": "Renewal dossier now accepts digital signatures and reduces review clock for low-risk Class I/II devices.",
+      "tags": ["PMDA", "accreditation", "class-I", "class-II"],
+      "url": "https://www.pmda.go.jp/english/"
+    }
+  ]
+}
