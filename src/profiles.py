@@ -20,8 +20,8 @@ PROFILES = {
         ),
         "tools": [tools.fetch_regulatory_updates, tools.classify_impact, tools.draft_followup_memo],
         "demo_query": (
-            "Fetch the latest NMPA and FDA updates, classify their impact, and draft a follow-up "
-            "memo for the highest-impact one."
+            "Fetch the latest FDA medical-device recalls, classify their impact, and draft a "
+            "follow-up memo for the highest-impact recall."
         ),
     },
     "submission-ready": {

@@ -25,8 +25,8 @@ error-prone. MedReg makes it a one-command, auditable agent — turning
 background drudgery into actionable memos.
 
 ## 2. Public code repo (REQUIRED)
-- Repo URL: _(set on GitHub before submit)_
-- Must show **MIT** (or Apache) license in the About section — ✅ `LICENSE` present.
+- Repo URL: **https://github.com/zhaoxinghua09-cell/aws-agents-for-humans** ✅ (pushed 09-08)
+- Must show **MIT** (or Apache) license in the About section — ✅ verified `license: MIT`.
 - Must include **README** — ✅ `README.md` present with run instructions.
 
 ## 3. Architecture Diagram (REQUIRED)
@@ -43,7 +43,7 @@ Suggested script:
 6. **4:30–5:00** Close: one command, auditable output, real impact.
 
 ## 5. AWS Builder ID (REQUIRED)
-- Create at https://aws.amazon.com/builder-id/ — see `AWS_SETUP.md`.
+- ✅ Created 2026-09-08. (Guide: `AWS_SETUP.md`.)
 
 ## 6. Optional (strengthens score)
 - Live demo link (deploy on Bedrock AgentCore).

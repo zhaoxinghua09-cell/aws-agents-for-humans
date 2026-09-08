@@ -11,7 +11,12 @@ A single configurable Strands agent with three personas (one codebase → multip
 | `submission-ready` | Submission Readiness | Professional Agents | Checks registration packages against a checklist (UDI/STED/labeling/cybersecurity), reports readiness |
 | `clinic-compliance` | Clinic Compliance Helper | Good Neighbor Agents | Flags clinic inventory / sterilization / recall items needing review |
 
-**Tools are deterministic and run offline** (no LLM required), so the agent's output is auditable — exactly what regulatory work demands.
+**Tools are deterministic** (no LLM judgment inside the tools), so the agent's output is auditable — exactly what regulatory work demands.
+
+## Data sources — real, live, auditable
+- **FDA records are fetched LIVE** from the [openFDA](https://open.fda.gov/) public API (real device recalls, no API key required). Recent windows auto-widen when recall posting lags, and every fetch failure is surfaced to the agent as a `live_source_error` note — never silently ignored.
+- Other regions (NMPA / EU MDR / PMDA) use a bundled demo corpus, which **doubles as the offline fallback**: if the network is down, the demo still runs and the agent transparently tells you it served bundled data instead.
+- Result: no fake data masquerading as live data, and no silent failures — a compliance tool you can actually trust.
 
 ## Why it matters
 Regulatory-affairs teams drown in manual monitoring across 4+ jurisdictions. A single missed update (e.g., a tighter endotoxin threshold for implanted orthopedic devices) can stall a product for months. MedReg turns that repetitive, high-judgment work into a one-command agent.
@@ -20,9 +25,9 @@ Regulatory-affairs teams drown in manual monitoring across 4+ jurisdictions. A s
 ```bash
 pip install -r requirements.txt
 
-# Local dev with Ollama (zero AWS cost) — point at your local model
+# Local dev with Ollama (zero AWS cost) — point at any model you have pulled
 export OLLAMA_HOST=http://localhost:11434
-export OLLAMA_MODEL=qwen3.5:latest
+export OLLAMA_MODEL=qwen3.5:4b
 python src/agent.py --profile reg-watch --demo
 
 # Production on AWS Bedrock (for submission / AgentCore deployment)
