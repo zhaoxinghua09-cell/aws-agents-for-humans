@@ -17,7 +17,7 @@
 约 5 分钟，免费，只需邮箱。
 1. 打开 https://aws.amazon.com/builder-id/
 2. 点 **Create an AWS Builder ID** / **Get started**
-3. 输入常用邮箱（建议 `zhaoxinghua2022@qq.com`）
+3. 输入常用邮箱（用你注册 Builder ID 所用的邮箱；本仓库不记录任何具体邮箱）
 4. 收验证邮件 → 点链接 → 设密码 → 完成
 5. **记下这个 Builder ID（提交表单时要填）**
 
