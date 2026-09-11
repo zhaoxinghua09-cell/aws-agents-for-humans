@@ -9,3 +9,8 @@ venv/
 dist/
 build/
 *.egg-info/
+
+# --- 内部文档：含本地绝对路径/操作细节，禁止进入公开仓库 ---
+AWS_DevPost_*.md
+DEVPOST_SUBMISSION_DRAFT.md
+_devpost_rules.txt
